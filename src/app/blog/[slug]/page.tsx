@@ -39,7 +39,7 @@ export default async function MoreBlog({params}:{params:{slug:String}}){
             </h1>
             <Image src={urlFor(data.titleImage).url()} width={700} height={700} alt='article image' className=" rounded-2xl mt-8 border" priority />
 
-           <div className="mt-16 prose prose-xl dark:prose-invert ">
+           <div className="mt-16 prose prose-xl prose-li:marker:text-primary dark:prose-invert ">
             <PortableText value={data.content}/>
             </div> 
         </div>
